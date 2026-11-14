@@ -4,7 +4,8 @@ version = "0.1.0"
 description = "Model-agnostic AI workflow engine (R0 core engine spine)"
 readme = "README.md"
 requires-python = ">=3.12"
-license = { file = "LICENSE" }
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
 authors = [{ name = "navigator" }]
 
 # Runtime spine only. Providers and infra drivers are extras so the hermetic
