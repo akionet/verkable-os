@@ -55,15 +55,18 @@ class HeaderPrincipalProvider:
     authz, and pretending otherwise here would be worse than being explicit.
     """
 
-    def __init__(self, header: str, issuer: str = "header") -> None:
+    def __init__(
+        self, header: str, issuer: str = "header", scopes: frozenset[str] = frozenset()
+    ) -> None:
         self._header = header
         self._issuer = issuer
+        self._scopes = scopes
 
     def __call__(self, request: Request) -> Principal | None:
         raw = request.headers.get(self._header)
         if not raw:
             return None
-        return Principal(subject=raw.strip(), issuer=self._issuer)
+        return Principal(subject=raw.strip(), issuer=self._issuer, scopes=self._scopes)
 
 
 def resolve_principal(request: Request) -> Principal | None:

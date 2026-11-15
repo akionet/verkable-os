@@ -8,6 +8,7 @@ boot instead of failing one request in production (AC-4).
 
 from __future__ import annotations
 
+import os
 from collections.abc import AsyncIterator, Callable
 from contextlib import asynccontextmanager
 from dataclasses import dataclass, field
@@ -36,6 +37,11 @@ from navigator_orchestrator.engine.policy import Policy
 from navigator_orchestrator.engine.prompts import PromptRegistry
 from navigator_orchestrator.engine.runner import Runner
 from navigator_orchestrator.engine.workflow import WorkflowRegistry
+from navigator_orchestrator.observe.models import ObserveFault
+from navigator_orchestrator.observe.routes import create_router as observe_router
+from navigator_orchestrator.observe.routes import fault_response
+from navigator_orchestrator.observe.sources import VaultReportSource
+from navigator_orchestrator.observe.tenancy import ConfigTenantAccess, ObserveConfig
 from navigator_orchestrator.store import (
     InMemoryRunLogStore,
     InMemoryRunStore,
@@ -80,7 +86,7 @@ def make_run_store(settings: Settings) -> RunStore | None:
 def make_principal_provider(settings: Settings) -> PrincipalProvider:
     """Header-based identity when a principal is required, stub otherwise."""
     if settings.require_principal:
-        return HeaderPrincipalProvider(settings.principal_header)
+        return HeaderPrincipalProvider(settings.principal_header, scopes=settings.principal_scopes)
     return StubPrincipalProvider()
 
 
@@ -184,10 +190,26 @@ def build_context(
 
 def build_app(
     settings: Settings | None = None,
+    observe: ObserveConfig | None = None,
     **overrides: Any,
 ) -> FastAPI:
     """Build the ASGI app. Context construction happens in the lifespan so a
     boot failure (e.g. a missing prompt) surfaces on startup, not on import."""
+
+    observed_settings = settings if settings is not None else get_settings()
+    if observe is None and observed_settings.observe_manifest is not None:
+        observe = ObserveConfig.from_manifest(observed_settings.observe_manifest)
+    observe_sources = (
+        {
+            (org, space): VaultReportSource(
+                config, token=os.environ.get(config.token_env) if config.token_env else None
+            )
+            for org, tenant in observe.orgs.items()
+            for space, config in tenant.spaces.items()
+        }
+        if observe is not None
+        else {}
+    )
 
     @asynccontextmanager
     async def lifespan(application: FastAPI) -> AsyncIterator[None]:
@@ -200,6 +222,8 @@ def build_app(
             closer = getattr(cache, "aclose", None)
             if closer is not None:
                 await closer()
+            for source in observe_sources.values():
+                await source.aclose()
 
     application = FastAPI(
         title="navigator-orchestrator-api",
@@ -208,6 +232,9 @@ def build_app(
         lifespan=lifespan,
     )
     application.include_router(router)
+    if observe is not None:
+        application.add_exception_handler(ObserveFault, fault_response)
+        application.include_router(observe_router(ConfigTenantAccess(observe), observe_sources))
     return application
 
 

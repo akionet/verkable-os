@@ -68,6 +68,10 @@ class Settings(BaseSettings):
     require_principal: bool = False
     #: Identity header, set by a trusted upstream proxy (GCP IAP on Cloud Run).
     principal_header: str = "x-goog-iap-jwt-assertion"
+    #: Server-configured scopes for identities supplied by the trusted proxy.
+    principal_scopes: frozenset[str] = frozenset()
+    #: Opt in to read-only Observe routes from the manifest's [observe] table.
+    observe_manifest: Path | None = None
 
     # --- stores ------------------------------------------------------------
     redis_url: str | None = None

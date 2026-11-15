@@ -79,3 +79,9 @@ list is represented.
 
 Apache-2.0. See [LICENSE](LICENSE) for the full licence text and [NOTICE](NOTICE)
 for copyright attribution.
+
+## Observe automation reports
+
+The optional, read-only Observe API lists tenant-scoped reports, pending human
+reviews and trends. See [docs/observe.md](docs/observe.md) for manifest setup,
+principal configuration, routes and the generated consumer contract.

@@ -1,0 +1,230 @@
+{
+ "schema": "verkable.automation-report/1",
+ "space": "cuisinesavvy",
+ "generated_at": "2026-11-14T21:06:39Z",
+ "window": {
+  "from": "2026-11-14T18:01:53Z",
+  "to": "2026-11-14T21:06:39Z"
+ },
+ "previous": "tenants/cuisinesavvy/automation-reports/2026/11/14/1801Z.json",
+ "headline": {
+  "published": 1,
+  "submitted": 0,
+  "decisions": 12,
+  "decided_by_automation": 9,
+  "decided_by_human": 3,
+  "pending_human_added": 5,
+  "pending_human_resolved": 3,
+  "pending_human_total": 45,
+  "automation_queue": 2,
+  "errors": 2,
+  "held_by_backpressure": 0
+ },
+ "published": [
+  {
+   "title": "Lemongrass Carrot Stew",
+   "run": "20261114-181916-approve-f4320e",
+   "at": "2026-11-14T18:31:25Z",
+   "decided_by": "judge",
+   "issue": 1644,
+   "identifier": "lemongrass-carrot-stew",
+   "url": "https://www.cuisinesavvy.com/recipe/lemongrass-carrot-stew"
+  }
+ ],
+ "submitted": [],
+ "decisions": {
+  "by_decider": {
+   "autopilot": {
+    "approve": 2
+   },
+   "human": {
+    "revise": 2,
+    "approve": 1
+   },
+   "judge": {
+    "revise": 3,
+    "approve": 4
+   }
+  },
+  "by_workflow": {
+   "approve": {
+    "approve": 1
+   },
+   "cleanup": {
+    "approve": 1
+   },
+   "image": {
+    "revise": 2
+   },
+   "image-upload": {
+    "revise": 3,
+    "approve": 3
+   },
+   "practicality": {
+    "approve": 1
+   },
+   "respond": {
+    "approve": 1
+   }
+  }
+ },
+ "judge": {
+  "approve": 4,
+  "revise": 3,
+  "stop": 4,
+  "with_polish": 2,
+  "stops": [
+   {
+    "issue": 1629,
+    "run": "20261114-172453-approve-053793",
+    "workflow": "approve",
+    "subject": "crisp-chilli-soy-cauliflower",
+    "reasons": [
+     "Health text says tamari keeps it gluten-free; editor forbade this, and ketchup and chilli sauce can contain gluten",
+     "Health text says soy sauce adds 'a small amount of sodium', which is false at roughly 2 tbsp across 4 servings",
+     "extRecipes still has a score of 68, a working that rounds 66 to 68, and an 'I have not fetched' note; editor said drop them"
+    ]
+   },
+   {
+    "issue": 1630,
+    "run": "20261114-172824-approve-e88e60",
+    "workflow": "approve",
+    "subject": "vegan-mushroom-cabbage-rolls",
+    "reasons": [
+     "Health text says it swaps pork mince: false, sarmale de post are meat-free and the brief says no swap",
+     "Health text skips the editor's required opening sentence",
+     "extRecipes score blurb says page not fetched and shows messy 87→83 working, which note 3 forbids"
+    ]
+   },
+   {
+    "issue": 1651,
+    "run": "20261114-185724-image-upload-05df62",
+    "workflow": "image-upload",
+    "subject": "warm-squash-spice-latte",
+    "reasons": [
+     "Mug fills only ~1/4 of frame; mostly empty plate",
+     "Reads as a plain cappuccino, no squash colour or cue",
+     "Real-looking, sharp, likeness 3/5 OK"
+    ]
+   },
+   {
+    "issue": 1653,
+    "run": "20261114-185846-image-eb70e3",
+    "workflow": "image",
+    "subject": "lemongrass-carrot-stew",
+    "reasons": [
+     "the photo looks AI-generated: likeness 4/5, above 3/5",
+     "already sent back 2 times"
+    ]
+   }
+  ]
+ },
+ "pending_human": {
+  "added": [
+   {
+    "issue": 1629,
+    "run": "20261114-172453-approve-053793",
+    "workflow": "approve",
+    "title": "approve: Crisp Chilli-Soy Cauliflower (20261114)",
+    "reason": "judge stopped: Health text says tamari keeps it gluten-free; editor forbade this, and ketchup and chilli sauce can contain gluten",
+    "waiting_since": "2026-11-14T17:25:42Z"
+   },
+   {
+    "issue": 1630,
+    "run": "20261114-172824-approve-e88e60",
+    "workflow": "approve",
+    "title": "approve: Vegan Mushroom Cabbage Rolls (20261114)",
+    "reason": "judge stopped: Health text says it swaps pork mince: false, sarmale de post are meat-free and the brief says no swap",
+    "waiting_since": "2026-11-14T17:29:24Z"
+   },
+   {
+    "issue": 1646,
+    "run": "20261114-183201-nutrition-c7495b",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-183201-nutrition-c7495b)",
+    "reason": "automation flagged: 5 ingredient line(s) have no match in the registry: `2 stalks lemongrass, outer leaves removed, bruised and cut i` (cannot weigh 2.0 x of 'Lemongrass'); `1 thumb-sized piece of fresh ginger (about 3 cm), peeled and` (cannot weigh 1.0 x of 'Ginger'); `3 whole star anise` (no ingre",
+    "waiting_since": "2026-11-14T18:32:22Z"
+   },
+   {
+    "issue": 1651,
+    "run": "20261114-185724-image-upload-05df62",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261114-185724-image-upload-05df62)",
+    "reason": "judge stopped: Mug fills only ~1/4 of frame; mostly empty plate",
+    "waiting_since": "2026-11-14T18:57:37Z"
+   },
+   {
+    "issue": 1653,
+    "run": "20261114-185846-image-eb70e3",
+    "workflow": "image",
+    "title": "cuisinesavvy: image waiting (20261114-185846-image-eb70e3)",
+    "reason": "judge stopped: the photo looks AI-generated: likeness 4/5, above 3/5",
+    "waiting_since": "2026-11-14T19:10:08Z"
+   }
+  ],
+  "resolved": [
+   {
+    "issue": 1313,
+    "run": "20261113-082832-image-upload-e43e39",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261113-082832-image-upload-e43e39)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T18:49:53Z"
+    }
+   },
+   {
+    "issue": 1362,
+    "run": "20261113-101933-image-upload-f90bdb",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261113-101933-image-upload-f90bdb)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T18:49:33Z"
+    }
+   },
+   {
+    "issue": 1444,
+    "run": "20261113-160500-image-upload-980dc5",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261113-160500-image-upload-980dc5)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T18:49:13Z"
+    }
+   }
+  ],
+  "unchanged": 40,
+  "total": 45,
+  "oldest": {
+   "issue": 1236,
+   "waiting_since": "2026-11-13T06:14:59Z",
+   "age_hours": 38.9
+  }
+ },
+ "automation_queue": {
+  "total": 2,
+  "by_workflow": {
+   "cost_class": 1,
+   "respond": 1
+  },
+  "change": -4
+ },
+ "errors": [
+  {
+   "at": "2026-11-14T18:28:24Z",
+   "text": "galatea: creamy-butternut-squash-pasta -> failed: 24,045"
+  },
+  {
+   "at": "2026-11-14T18:33:10Z",
+   "text": "chain: 20261114-181916-approve-f4320e -> cost_class new ingredients run=None exit=1 waiting=False"
+  }
+ ],
+ "backpressure": {
+  "passes_throttled": 0,
+  "last": null
+ }
+}
