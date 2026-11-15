@@ -1,0 +1,110 @@
+{
+ "schema": "verkable.automation-report/1",
+ "space": "cuisinesavvy",
+ "generated_at": "2026-11-15T00:12:05Z",
+ "window": {
+  "from": "2026-11-14T21:06:39Z",
+  "to": "2026-11-15T00:12:05Z"
+ },
+ "previous": "tenants/cuisinesavvy/automation-reports/2026/11/14/2106Z.json",
+ "headline": {
+  "published": 0,
+  "submitted": 0,
+  "decisions": 3,
+  "decided_by_automation": 0,
+  "decided_by_human": 3,
+  "pending_human_added": 0,
+  "pending_human_resolved": 3,
+  "pending_human_total": 42,
+  "automation_queue": 1,
+  "errors": 1,
+  "held_by_backpressure": 0
+ },
+ "published": [],
+ "submitted": [],
+ "decisions": {
+  "by_decider": {
+   "human": {
+    "reject": 2,
+    "approve": 1
+   }
+  },
+  "by_workflow": {
+   "nutrition": {
+    "reject": 1,
+    "approve": 1
+   },
+   "respond": {
+    "reject": 1
+   }
+  }
+ },
+ "judge": {
+  "approve": 0,
+  "revise": 0,
+  "stop": 0,
+  "with_polish": 0,
+  "stops": []
+ },
+ "pending_human": {
+  "added": [],
+  "resolved": [
+   {
+    "issue": 1236,
+    "run": "20261111-191521-nutrition-4e7c0f",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261111-191521-nutrition-4e7c0f)",
+    "resolution": {
+     "verdict": "left the human queue",
+     "decided_by": null
+    }
+   },
+   {
+    "issue": 1500,
+    "run": "20261114-122021-nutrition-1ba4ab",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-122021-nutrition-1ba4ab)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-15T00:09:09Z"
+    }
+   },
+   {
+    "issue": 1573,
+    "run": "20261114-143627-nutrition-a3ba30",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-143627-nutrition-a3ba30)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T23:53:24Z"
+    }
+   }
+  ],
+  "unchanged": 42,
+  "total": 42,
+  "oldest": {
+   "issue": 1507,
+   "waiting_since": "2026-11-14T12:27:03Z",
+   "age_hours": 11.8
+  }
+ },
+ "automation_queue": {
+  "total": 1,
+  "by_workflow": {
+   "cost_class": 1
+  },
+  "change": -1
+ },
+ "errors": [
+  {
+   "at": "2026-11-14T23:38:31Z",
+   "text": "judge: mirror cuisinesavvy: KeyError: 'gates'"
+  }
+ ],
+ "backpressure": {
+  "passes_throttled": 0,
+  "last": null
+ }
+}

@@ -1,0 +1,346 @@
+{
+ "schema": "verkable.automation-report/1",
+ "last_report": "tenants/cuisinesavvy/automation-reports/2026/11/15/0012Z.json",
+ "to": "2026-11-15T00:12:05Z",
+ "pending_human": {
+  "1653": {
+   "issue": 1653,
+   "run": "20261114-185846-image-eb70e3",
+   "workflow": "image",
+   "title": "cuisinesavvy: image waiting (20261114-185846-image-eb70e3)",
+   "reason": "judge stopped: the photo looks AI-generated: likeness 4/5, above 3/5",
+   "waiting_since": "2026-11-14T19:10:08Z"
+  },
+  "1651": {
+   "issue": 1651,
+   "run": "20261114-185724-image-upload-05df62",
+   "workflow": "image-upload",
+   "title": "cuisinesavvy: image-upload waiting (20261114-185724-image-upload-05df62)",
+   "reason": "judge stopped: Mug fills only ~1/4 of frame; mostly empty plate",
+   "waiting_since": "2026-11-14T18:57:37Z"
+  },
+  "1646": {
+   "issue": 1646,
+   "run": "20261114-183201-nutrition-c7495b",
+   "workflow": "nutrition",
+   "title": "cuisinesavvy: nutrition waiting (20261114-183201-nutrition-c7495b)",
+   "reason": "automation flagged: 5 ingredient line(s) have no match in the registry: `2 stalks lemongrass, outer leaves removed, bruised and cut i` (cannot weigh 2.0 x of 'Lemongrass'); `1 thumb-sized piece of fresh ginger (about 3 cm), peeled and` (cannot weigh 1.0 x of 'Ginger'); `3 whole star anise` (no ingre",
+   "waiting_since": "2026-11-14T18:32:22Z"
+  },
+  "1639": {
+   "issue": 1639,
+   "run": "20261114-174233-image-upload-dbb74a",
+   "workflow": "image-upload",
+   "title": "cuisinesavvy: image-upload waiting (20261114-174233-image-upload-dbb74a)",
+   "reason": "judge stopped: Visible '© The Endless Meal' watermark: this is another food blog's copyrighted photo, not ours to publish",
+   "waiting_since": "2026-11-14T17:42:49Z"
+  },
+  "1638": {
+   "issue": 1638,
+   "run": "20261114-174214-image-upload-43ec78",
+   "workflow": "image-upload",
+   "title": "cuisinesavvy: image-upload waiting (20261114-174214-image-upload-43ec78)",
+   "reason": "judge stopped: Same file as Codex candidate-v3 (394,909 bytes), which was stopped on 13 Nov",
+   "waiting_since": "2026-11-14T17:42:29Z"
+  },
+  "1637": {
+   "issue": 1637,
+   "run": "20261114-174156-image-upload-c9227f",
+   "workflow": "image-upload",
+   "title": "cuisinesavvy: image-upload waiting (20261114-174156-image-upload-c9227f)",
+   "reason": "judge stopped: Watermark text 'Hadia's Lebanese Cuisine' on the bowl",
+   "waiting_since": "2026-11-14T17:42:11Z"
+  },
+  "1636": {
+   "issue": 1636,
+   "run": "20261114-174137-image-upload-46390f",
+   "workflow": "image-upload",
+   "title": "cuisinesavvy: image-upload waiting (20261114-174137-image-upload-46390f)",
+   "reason": "judge stopped: Right dish: tomato-braised flat beans, onion, garlic, parsley; nothing non-vegan",
+   "waiting_since": "2026-11-14T17:41:52Z"
+  },
+  "1630": {
+   "issue": 1630,
+   "run": "20261114-172824-approve-e88e60",
+   "workflow": "approve",
+   "title": "approve: Vegan Mushroom Cabbage Rolls (20261114)",
+   "reason": "judge stopped: Health text says it swaps pork mince: false, sarmale de post are meat-free and the brief says no swap",
+   "waiting_since": "2026-11-14T17:29:24Z"
+  },
+  "1629": {
+   "issue": 1629,
+   "run": "20261114-172453-approve-053793",
+   "workflow": "approve",
+   "title": "approve: Crisp Chilli-Soy Cauliflower (20261114)",
+   "reason": "judge stopped: Health text says tamari keeps it gluten-free; editor forbade this, and ketchup and chilli sauce can contain gluten",
+   "waiting_since": "2026-11-14T17:25:42Z"
+  },
+  "1628": {
+   "issue": 1628,
+   "run": "20261114-171933-approve-ad8122",
+   "workflow": "approve",
+   "title": "approve: Date Apple Cranberry Chutney (20261114)",
+   "reason": "judge stopped: Fine sea salt (1 tsp) required by the brief but missing from list and method",
+   "waiting_since": "2026-11-14T17:20:25Z"
+  },
+  "1620": {
+   "issue": 1620,
+   "run": "20261114-165025-image-upload-3bdf1d",
+   "workflow": "image-upload",
+   "title": "cuisinesavvy: image-upload waiting (20261114-165025-image-upload-3bdf1d)",
+   "reason": "judge stopped: No rice visible: it reads as lentils only",
+   "waiting_since": "2026-11-14T16:50:42Z"
+  },
+  "1614": {
+   "issue": 1614,
+   "run": "20261114-163255-nutrition-568155",
+   "workflow": "nutrition",
+   "title": "cuisinesavvy: nutrition waiting (20261114-163255-nutrition-568155)",
+   "reason": "automation flagged: 4 ingredient line(s) have no match in the registry: `400 g plant sausages, skins removed and crumbled, or 400 g c` (no ingredient matches 'plant sausages'); `100 g dried apricots, finely chopped` (no ingredient matches 'dried apricots'); `2 tbsp caramelised red onion chutney (che",
+   "waiting_since": "2026-11-14T16:33:17Z"
+  },
+  "1611": {
+   "issue": 1611,
+   "run": "20261114-161824-respond-cde7f1",
+   "workflow": "respond",
+   "title": "respond: Georgian Red Pepper Walnut Satsivi (20261114)",
+   "reason": "judge stopped: Health text falsely says 2 tbsp oil go into the sauce (1 tbsp sauce, 1 tbsp roasting)",
+   "waiting_since": "2026-11-14T16:19:37Z"
+  },
+  "1609": {
+   "issue": 1609,
+   "run": "20261114-161345-respond-27d81d",
+   "workflow": "respond",
+   "title": "respond: Baharat Lentil Rice (20261114)",
+   "reason": "judge stopped: Health text and tag call it high-protein; ~20 g protein is only ~12% of ~650-700 kcal, below the UK/EU 20%-of-energy threshold, so the claim is false",
+   "waiting_since": "2026-11-14T16:14:59Z"
+  },
+  "1606": {
+   "issue": 1606,
+   "run": "20261114-160812-image-upload-21240e",
+   "workflow": "image-upload",
+   "title": "cuisinesavvy: image-upload waiting (20261114-160812-image-upload-21240e)",
+   "reason": "judge stopped: Right dish: chickpeas in tomato gravy, coriander garnish, no meat or dairy",
+   "waiting_since": "2026-11-14T16:08:29Z"
+  },
+  "1605": {
+   "issue": 1605,
+   "run": "20261114-160252-image-ec1031",
+   "workflow": "image",
+   "title": "cuisinesavvy: image waiting (20261114-160252-image-ec1031)",
+   "reason": "judge stopped: the photo looks AI-generated: likeness 4/5, above 3/5",
+   "waiting_since": "2026-11-14T16:04:02Z"
+  },
+  "1595": {
+   "issue": 1595,
+   "run": "20261114-152101-nutrition-6a740d",
+   "workflow": "nutrition",
+   "title": "cuisinesavvy: nutrition waiting (20261114-152101-nutrition-6a740d)",
+   "reason": "automation flagged: 1 ingredient line(s) have no match in the registry: `¼–½ tsp Warm Lebanese Baharat Blend (see internalRecipes lin` (no ingredient matches 'Warm Lebanese Baharat Blend')",
+   "waiting_since": "2026-11-14T15:21:14Z"
+  },
+  "1593": {
+   "issue": 1593,
+   "run": "20261114-151735-regen-a458b7",
+   "workflow": "regen",
+   "title": "cuisinesavvy: regen waiting (20261114-151735-regen-a458b7)",
+   "reason": "judge stopped: The tag removal, garlic steeped in the oat milk, 3/4 tsp salt, course Side and the autumn/potato/thanksgiving tags all carry over",
+   "waiting_since": "2026-11-14T15:17:54Z"
+  },
+  "1588": {
+   "issue": 1588,
+   "run": "20261114-151221-nutrition-36f1ea",
+   "workflow": "nutrition",
+   "title": "cuisinesavvy: nutrition waiting (20261114-151221-nutrition-36f1ea)",
+   "reason": "automation flagged: 8 ingredient line(s) have no match in the registry: `1 tsp garam masala` (no ingredient matches 'garam masala'); `1 tbsp ginger-garlic paste` (no ingredient matches 'ginger-garlic paste'); `1 tsp kasuri methi (dried fenugreek leaves), crushed` (no ingredient matches 'kasuri methi",
+   "waiting_since": "2026-11-14T15:12:55Z"
+  },
+  "1587": {
+   "issue": 1587,
+   "run": "20261114-150541-image-a47dfb",
+   "workflow": "image",
+   "title": "cuisinesavvy: image waiting (20261114-150541-image-a47dfb)",
+   "reason": "judge stopped: the photo looks AI-generated: likeness 5/5, above 3/5",
+   "waiting_since": "2026-11-14T15:08:52Z"
+  },
+  "1586": {
+   "issue": 1586,
+   "run": "20261114-150458-image-9ee266",
+   "workflow": "image",
+   "title": "cuisinesavvy: image waiting (20261114-150458-image-9ee266)",
+   "reason": "judge stopped: the photo looks AI-generated: likeness 5/5, above 3/5",
+   "waiting_since": "2026-11-14T15:08:45Z"
+  },
+  "1585": {
+   "issue": 1585,
+   "run": "20261114-150210-approve-56bc49",
+   "workflow": "approve",
+   "title": "approve: Five-Spice Roasted Root Vegetables (20261114)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T15:02:48Z"
+  },
+  "1584": {
+   "issue": 1584,
+   "run": "20261114-145754-regen-92cdeb",
+   "workflow": "regen",
+   "title": "cuisinesavvy: regen waiting (20261114-145754-regen-92cdeb)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T14:58:14Z"
+  },
+  "1583": {
+   "issue": 1583,
+   "run": "20261114-145619-approve-4f7296",
+   "workflow": "approve",
+   "title": "approve: Warming Ras el Hanout Red Lentil Soup (20261114)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T14:57:06Z"
+  },
+  "1582": {
+   "issue": 1582,
+   "run": "20261114-144739-approve-5676cf",
+   "workflow": "approve",
+   "title": "approve: Vietnamese Lemongrass Mushroom Stew (20261114)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T14:48:22Z"
+  },
+  "1579": {
+   "issue": 1579,
+   "run": "20261114-144516-nutrition-47a322",
+   "workflow": "nutrition",
+   "title": "cuisinesavvy: nutrition waiting (20261114-144516-nutrition-47a322)",
+   "reason": "automation flagged: 1 ingredient line(s) have no match in the registry: `150 g pitted prunes` (no ingredient matches 'prunes')",
+   "waiting_since": "2026-11-14T14:45:31Z"
+  },
+  "1578": {
+   "issue": 1578,
+   "run": "20261114-144313-approve-6390db",
+   "workflow": "approve",
+   "title": "approve: Super-Charged Roasted Vegetables (20261114)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T14:43:57Z"
+  },
+  "1577": {
+   "issue": 1577,
+   "run": "20261114-144101-approve-3009f0",
+   "workflow": "approve",
+   "title": "approve: Za'atar Roasted Vegetables with Quinoa (20261114)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T14:42:03Z"
+  },
+  "1576": {
+   "issue": 1576,
+   "run": "20261114-143849-approve-59efa1",
+   "workflow": "approve",
+   "title": "approve: Za'atar Manakeesh Flatbread (20261114)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T14:39:47Z"
+  },
+  "1572": {
+   "issue": 1572,
+   "run": "20261114-143349-respond-574b7a",
+   "workflow": "respond",
+   "title": "respond: Spiced Pumpkin Muffins (20261114)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T14:34:58Z"
+  },
+  "1571": {
+   "issue": 1571,
+   "run": "20261114-143147-approve-f59bf2",
+   "workflow": "approve",
+   "title": "approve: Port Red Onion Cranberry Relish (20261114)",
+   "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+   "waiting_since": "2026-11-14T14:32:27Z"
+  },
+  "1560": {
+   "issue": 1560,
+   "run": "20261114-140648-nutrition-59a856",
+   "workflow": "nutrition",
+   "title": "cuisinesavvy: nutrition waiting (20261114-140648-nutrition-59a856)",
+   "reason": "automation flagged: 1 ingredient line(s) have no match in the registry: `1–1½ tsp homemade Garam Masala (Indian Spice Mix) — see link` (no ingredient matches 'homemade Garam Masala')",
+   "waiting_since": "2026-11-14T14:07:01Z"
+  },
+  "1546": {
+   "issue": 1546,
+   "run": "20261114-113008-nutrition-9b2241",
+   "workflow": "nutrition",
+   "title": "cuisinesavvy: nutrition waiting (20261114-113008-nutrition-9b2241)",
+   "reason": "automation flagged: 2 ingredient line(s) have no match in the registry: `2 tablespoons oyster sauce (vegan)` (no ingredient matches 'oyster sauce'); `1 tablespoon fish sauce (vegan)` (no ingredient matches 'fish sauce')",
+   "waiting_since": "2026-11-14T13:29:06Z"
+  },
+  "1545": {
+   "issue": 1545,
+   "run": "20261114-113028-nutrition-0e90e7",
+   "workflow": "nutrition",
+   "title": "cuisinesavvy: nutrition waiting (20261114-113028-nutrition-0e90e7)",
+   "reason": "automation flagged: 3 ingredient line(s) have no match in the registry: `200g tub hummus` (no ingredient matches 'hummus'); `4 seeded wraps` (no ingredient matches 'wraps'); `small handful rocket leaves` ('Rocket' has no quantity)",
+   "waiting_since": "2026-11-14T13:29:02Z"
+  },
+  "1543": {
+   "issue": 1543,
+   "run": "20261114-132702-respond-84c501",
+   "workflow": "respond",
+   "title": "respond: Baharat Lentil Soup (20261114)",
+   "reason": "judge stopped: Health text says 'HealthScore of 7 out of 10'; the published score is 91/100, so readers see a false number",
+   "waiting_since": "2026-11-14T13:28:08Z"
+  },
+  "1538": {
+   "issue": 1538,
+   "run": "20261114-131630-respond-d542e2",
+   "workflow": "respond",
+   "title": "respond: Ginger Garlic Cranberry Chutney (20261114)",
+   "reason": "judge stopped: Description says 'roasted garlic' but the garlic is raw, minced and simmered",
+   "waiting_since": "2026-11-14T13:17:34Z"
+  },
+  "1536": {
+   "issue": 1536,
+   "run": "20261114-131208-respond-161764",
+   "workflow": "respond",
+   "title": "respond: Fragrant Vegetable Tagine (20261114)",
+   "reason": "judge stopped: Couscous/flatbread are listed ingredients but gluten/wheat is missing from allergens",
+   "waiting_since": "2026-11-14T13:13:15Z"
+  },
+  "1521": {
+   "issue": 1521,
+   "run": "20261114-123943-respond-8a531d",
+   "workflow": "respond",
+   "title": "respond: Spiced Red Lentil Cakes (20261114)",
+   "reason": "judge stopped: Health text says ~1 tbsp oil per serving; 2 tbsp over 4 servings is ½ tbsp (false reader-facing claim)",
+   "waiting_since": "2026-11-14T12:41:05Z"
+  },
+  "1519": {
+   "issue": 1519,
+   "run": "20261114-123653-regen-34e16c",
+   "workflow": "regen",
+   "title": "cuisinesavvy: regen waiting (20261114-123653-regen-34e16c)",
+   "reason": "judge stopped: Finishing oil still doesn't match: ingredients say 1 tbsp optional, but the berbere step and editor's note 2 say fry in 1 tsp taken from it",
+   "waiting_since": "2026-11-14T12:37:20Z"
+  },
+  "1516": {
+   "issue": 1516,
+   "run": "20261114-123436-regen-593fa5",
+   "workflow": "regen",
+   "title": "cuisinesavvy: regen waiting (20261114-123436-regen-593fa5)",
+   "reason": "judge stopped: Emily's '+clean' point is missing for score_methodology: the revision says don't touch it, but never says it must be one clean calculation",
+   "waiting_since": "2026-11-14T12:34:55Z"
+  },
+  "1512": {
+   "issue": 1512,
+   "run": "20261114-122945-regen-f86e37",
+   "workflow": "regen",
+   "title": "cuisinesavvy: regen waiting (20261114-122945-regen-f86e37)",
+   "reason": "judge stopped: Adds 'HealthScore target is 7', which the notes never asked for. '7 sauce' in Emily's answer means item 7 = course sauce",
+   "waiting_since": "2026-11-14T12:30:05Z"
+  },
+  "1507": {
+   "issue": 1507,
+   "run": "20261114-122637-regen-0f2dd7",
+   "workflow": "regen",
+   "title": "cuisinesavvy: regen waiting (20261114-122637-regen-0f2dd7)",
+   "reason": "judge stopped: Dukkah: the 'rely on linked recipe' option is carried, with 4 tbsp and keep the rest in a jar",
+   "waiting_since": "2026-11-14T12:27:03Z"
+  }
+ },
+ "automation_queue": {
+  "cost_class": 1
+ }
+}

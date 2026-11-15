@@ -1,0 +1,798 @@
+{
+ "schema": "verkable.automation-report/1",
+ "space": "cuisinesavvy",
+ "generated_at": "2026-11-14T18:01:53Z",
+ "window": {
+  "from": "2026-11-14T14:55:13Z",
+  "to": "2026-11-14T18:01:53Z"
+ },
+ "previous": "tenants/cuisinesavvy/automation-reports/2026/11/14/1455Z.json",
+ "headline": {
+  "published": 3,
+  "submitted": 1,
+  "decisions": 53,
+  "decided_by_automation": 47,
+  "decided_by_human": 6,
+  "pending_human_added": 25,
+  "pending_human_resolved": 6,
+  "pending_human_total": 43,
+  "automation_queue": 6,
+  "errors": 43,
+  "held_by_backpressure": 0
+ },
+ "published": [
+  {
+   "title": "Butter Seitan Makhani",
+   "run": "20261114-140336-approve-6b0f11",
+   "at": "2026-11-14T15:10:53Z",
+   "decided_by": "judge",
+   "issue": 1558,
+   "identifier": "butter-seitan-makhani",
+   "url": "https://www.cuisinesavvy.com/recipe/butter-seitan-makhani"
+  },
+  {
+   "title": "Crisped Onion Lentil Rice",
+   "run": "20261114-141238-approve-be25c4",
+   "at": "2026-11-14T15:19:59Z",
+   "decided_by": "judge",
+   "issue": 1565,
+   "identifier": "crisped-onion-lentil-rice",
+   "url": "https://www.cuisinesavvy.com/recipe/crisped-onion-lentil-rice"
+  },
+  {
+   "title": "Chestnut Apricot Herb Stuffing",
+   "run": "20261114-160933-approve-71638f",
+   "at": "2026-11-14T16:32:14Z",
+   "decided_by": "judge",
+   "issue": 1607,
+   "identifier": "chestnut-apricot-herb-stuffing",
+   "url": "https://www.cuisinesavvy.com/recipe/chestnut-apricot-herb-stuffing"
+  }
+ ],
+ "submitted": [
+  {
+   "request": "RU0L2I2",
+   "packet": "2026-11-14-lemongrass-carrot-stew",
+   "at": "2026-11-14T17:36:06Z"
+  }
+ ],
+ "decisions": {
+  "by_decider": {
+   "autopilot": {
+    "approve": 6
+   },
+   "human": {
+    "reject": 4,
+    "revise": 2
+   },
+   "judge": {
+    "approve": 24,
+    "revise": 9,
+    "reject": 8
+   }
+  },
+  "by_workflow": {
+   "approve": {
+    "approve": 3,
+    "reject": 8
+   },
+   "cleanup": {
+    "approve": 3
+   },
+   "image": {
+    "revise": 4
+   },
+   "image-upload": {
+    "reject": 4,
+    "revise": 5,
+    "approve": 3
+   },
+   "practicality": {
+    "approve": 3
+   },
+   "regen": {
+    "approve": 9
+   },
+   "respond": {
+    "approve": 9,
+    "revise": 2
+   }
+  }
+ },
+ "judge": {
+  "approve": 24,
+  "revise": 17,
+  "stop": 22,
+  "with_polish": 21,
+  "stops": [
+   {
+    "issue": 1586,
+    "run": "20261114-150458-image-9ee266",
+    "workflow": "image",
+    "subject": "ginger-chilli-tofu",
+    "reasons": [
+     "the photo looks AI-generated: likeness 5/5, above 3/5",
+     "already sent back 2 times"
+    ]
+   },
+   {
+    "issue": 1587,
+    "run": "20261114-150541-image-a47dfb",
+    "workflow": "image",
+    "subject": "chilli-tofu-with-peppers",
+    "reasons": [
+     "the photo looks AI-generated: likeness 5/5, above 3/5",
+     "already sent back 2 times"
+    ]
+   },
+   {
+    "issue": 1571,
+    "run": "20261114-143147-approve-f59bf2",
+    "workflow": "approve",
+    "subject": "port-red-onion-cranberry-relish",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1572,
+    "run": "20261114-143349-respond-574b7a",
+    "workflow": "respond",
+    "subject": "spiced-pumpkin-muffins",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1576,
+    "run": "20261114-143849-approve-59efa1",
+    "workflow": "approve",
+    "subject": "za-atar-manakeesh-flatbread",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1577,
+    "run": "20261114-144101-approve-3009f0",
+    "workflow": "approve",
+    "subject": "za-atar-roasted-vegetables-with-quinoa",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1578,
+    "run": "20261114-144313-approve-6390db",
+    "workflow": "approve",
+    "subject": "super-charged-roasted-vegetables",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1582,
+    "run": "20261114-144739-approve-5676cf",
+    "workflow": "approve",
+    "subject": "vietnamese-lemongrass-mushroom-stew",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1583,
+    "run": "20261114-145619-approve-4f7296",
+    "workflow": "approve",
+    "subject": "warming-ras-el-hanout-red-lentil-soup",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1584,
+    "run": "20261114-145754-regen-92cdeb",
+    "workflow": "regen",
+    "subject": "RVNUPNI",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1585,
+    "run": "20261114-150210-approve-56bc49",
+    "workflow": "approve",
+    "subject": "five-spice-roasted-root-vegetables",
+    "reasons": [
+     "the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)"
+    ]
+   },
+   {
+    "issue": 1593,
+    "run": "20261114-151735-regen-a458b7",
+    "workflow": "regen",
+    "subject": "R2158UM",
+    "reasons": [
+     "The tag removal, garlic steeped in the oat milk, 3/4 tsp salt, course Side and the autumn/potato/thanksgiving tags all carry over",
+     "Coconut cream is labelled 'tested nut-free swap', but nothing shows it was tested, so the claim is untrue",
+     "It calls the swap nut-free but lists coconut as a tree nut, a contradiction on an allergen"
+    ]
+   },
+   {
+    "issue": 1605,
+    "run": "20261114-160252-image-ec1031",
+    "workflow": "image",
+    "subject": "butter-seitan-makhani",
+    "reasons": [
+     "the photo looks AI-generated: likeness 4/5, above 3/5",
+     "already sent back 2 times"
+    ]
+   },
+   {
+    "issue": 1606,
+    "run": "20261114-160812-image-upload-21240e",
+    "workflow": "image-upload",
+    "subject": "hearty-chana-masala-with-garam-masala",
+    "reasons": [
+     "Right dish: chickpeas in tomato gravy, coriander garnish, no meat or dairy",
+     "Labelled a manual upload, but it looks AI-made: a rivet floats on the right wall with no handle, and the gravy has a smeared, shredded texture",
+     "Gravy looks orange-red and pulpy, not glossy and simmered"
+    ]
+   },
+   {
+    "issue": 1609,
+    "run": "20261114-161345-respond-27d81d",
+    "workflow": "respond",
+    "subject": "baharat-lentil-rice",
+    "reasons": [
+     "Health text and tag call it high-protein; ~20 g protein is only ~12% of ~650-700 kcal, below the UK/EU 20%-of-energy threshold, so the claim is false",
+     "Brief asks for about an hour on a weeknight; the draft runs ~110 min because the lentils only start after the onions finish",
+     "already sent back 2 times"
+    ]
+   },
+   {
+    "issue": 1611,
+    "run": "20261114-161824-respond-cde7f1",
+    "workflow": "respond",
+    "subject": "georgian-red-pepper-walnut-satsivi",
+    "reasons": [
+     "Health text falsely says 2 tbsp oil go into the sauce (1 tbsp sauce, 1 tbsp roasting)",
+     "Health text says every ingredient is whole and unprocessed; olive oil and vinegar are processed",
+     "'Under an hour' is false: preheat, 40 min roast, 10 min steam, peel, toast and blend run past 60 min"
+    ]
+   },
+   {
+    "issue": 1620,
+    "run": "20261114-165025-image-upload-3bdf1d",
+    "workflow": "image-upload",
+    "subject": "crisped-onion-lentil-rice",
+    "reasons": [
+     "No rice visible: it reads as lentils only",
+     "Crumbly brown mass looks like minced meat on a plant-based dish",
+     "Onion topping has lacy, melted-looking strands"
+    ]
+   },
+   {
+    "issue": 1636,
+    "run": "20261114-174137-image-upload-46390f",
+    "workflow": "image-upload",
+    "subject": "soft-baharat-green-beans",
+    "reasons": [
+     "Right dish: tomato-braised flat beans, onion, garlic, parsley; nothing non-vegan",
+     "Beans look like folded pasta sheets: no seams, seeds or trimmed ends",
+     "Garlic cloves look like almonds or nail clippings"
+    ]
+   },
+   {
+    "issue": 1637,
+    "run": "20261114-174156-image-upload-c9227f",
+    "workflow": "image-upload",
+    "subject": "silky-aubergine-maghmour",
+    "reasons": [
+     "Watermark text 'Hadia's Lebanese Cuisine' on the bowl",
+     "Looks like a third-party blog photo, so we likely don't have rights to publish it",
+     "Dish itself matches: aubergine, chickpeas, tomato, herbs, all plant-based"
+    ]
+   },
+   {
+    "issue": 1638,
+    "run": "20261114-174214-image-upload-43ec78",
+    "workflow": "image-upload",
+    "subject": "warm-lebanese-bean-stew",
+    "reasons": [
+     "Same file as Codex candidate-v3 (394,909 bytes), which was stopped on 13 Nov",
+     "Right dish: flat beans in tomato with onion and parsley, no meat or dairy",
+     "The beans look like pasta sheets: squared cut ends, no tips, seams or strings, waxy finish"
+    ]
+   },
+   {
+    "issue": 1639,
+    "run": "20261114-174233-image-upload-dbb74a",
+    "workflow": "image-upload",
+    "subject": "sweet-potato-chickpea-tagine",
+    "reasons": [
+     "Visible '© The Endless Meal' watermark: this is another food blog's copyrighted photo, not ours to publish",
+     "Text in the image fails check 2",
+     "Labelled 'uploaded by an editor, not model-generated', but the watermark shows it was taken from another site"
+    ]
+   },
+   {
+    "issue": 1628,
+    "run": "20261114-171933-approve-ad8122",
+    "workflow": "approve",
+    "subject": "date-apple-cranberry-chutney",
+    "reasons": [
+     "Fine sea salt (1 tsp) required by the brief but missing from list and method",
+     "Description still suggests a 'cold-cut sandwich', a meat serving idea on a vegan recipe",
+     "Health text keeps the banned 'no animal ingredients needed replacing in this adaptation'"
+    ]
+   }
+  ]
+ },
+ "pending_human": {
+  "added": [
+   {
+    "issue": 1571,
+    "run": "20261114-143147-approve-f59bf2",
+    "workflow": "approve",
+    "title": "approve: Port Red Onion Cranberry Relish (20261114)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T14:32:27Z"
+   },
+   {
+    "issue": 1572,
+    "run": "20261114-143349-respond-574b7a",
+    "workflow": "respond",
+    "title": "respond: Spiced Pumpkin Muffins (20261114)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T14:34:58Z"
+   },
+   {
+    "issue": 1576,
+    "run": "20261114-143849-approve-59efa1",
+    "workflow": "approve",
+    "title": "approve: Za'atar Manakeesh Flatbread (20261114)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T14:39:47Z"
+   },
+   {
+    "issue": 1577,
+    "run": "20261114-144101-approve-3009f0",
+    "workflow": "approve",
+    "title": "approve: Za'atar Roasted Vegetables with Quinoa (20261114)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T14:42:03Z"
+   },
+   {
+    "issue": 1578,
+    "run": "20261114-144313-approve-6390db",
+    "workflow": "approve",
+    "title": "approve: Super-Charged Roasted Vegetables (20261114)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T14:43:57Z"
+   },
+   {
+    "issue": 1582,
+    "run": "20261114-144739-approve-5676cf",
+    "workflow": "approve",
+    "title": "approve: Vietnamese Lemongrass Mushroom Stew (20261114)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T14:48:22Z"
+   },
+   {
+    "issue": 1583,
+    "run": "20261114-145619-approve-4f7296",
+    "workflow": "approve",
+    "title": "approve: Warming Ras el Hanout Red Lentil Soup (20261114)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T14:57:06Z"
+   },
+   {
+    "issue": 1584,
+    "run": "20261114-145754-regen-92cdeb",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261114-145754-regen-92cdeb)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T14:58:14Z"
+   },
+   {
+    "issue": 1585,
+    "run": "20261114-150210-approve-56bc49",
+    "workflow": "approve",
+    "title": "approve: Five-Spice Roasted Root Vegetables (20261114)",
+    "reason": "judge stopped: the reviewer failed 3 times in a row: reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)",
+    "waiting_since": "2026-11-14T15:02:48Z"
+   },
+   {
+    "issue": 1586,
+    "run": "20261114-150458-image-9ee266",
+    "workflow": "image",
+    "title": "cuisinesavvy: image waiting (20261114-150458-image-9ee266)",
+    "reason": "judge stopped: the photo looks AI-generated: likeness 5/5, above 3/5",
+    "waiting_since": "2026-11-14T15:08:45Z"
+   },
+   {
+    "issue": 1587,
+    "run": "20261114-150541-image-a47dfb",
+    "workflow": "image",
+    "title": "cuisinesavvy: image waiting (20261114-150541-image-a47dfb)",
+    "reason": "judge stopped: the photo looks AI-generated: likeness 5/5, above 3/5",
+    "waiting_since": "2026-11-14T15:08:52Z"
+   },
+   {
+    "issue": 1588,
+    "run": "20261114-151221-nutrition-36f1ea",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-151221-nutrition-36f1ea)",
+    "reason": "automation flagged: 8 ingredient line(s) have no match in the registry: `1 tsp garam masala` (no ingredient matches 'garam masala'); `1 tbsp ginger-garlic paste` (no ingredient matches 'ginger-garlic paste'); `1 tsp kasuri methi (dried fenugreek leaves), crushed` (no ingredient matches 'kasuri methi",
+    "waiting_since": "2026-11-14T15:12:55Z"
+   },
+   {
+    "issue": 1593,
+    "run": "20261114-151735-regen-a458b7",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261114-151735-regen-a458b7)",
+    "reason": "judge stopped: The tag removal, garlic steeped in the oat milk, 3/4 tsp salt, course Side and the autumn/potato/thanksgiving tags all carry over",
+    "waiting_since": "2026-11-14T15:17:54Z"
+   },
+   {
+    "issue": 1595,
+    "run": "20261114-152101-nutrition-6a740d",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-152101-nutrition-6a740d)",
+    "reason": "automation flagged: 1 ingredient line(s) have no match in the registry: `¼–½ tsp Warm Lebanese Baharat Blend (see internalRecipes lin` (no ingredient matches 'Warm Lebanese Baharat Blend')",
+    "waiting_since": "2026-11-14T15:21:14Z"
+   },
+   {
+    "issue": 1605,
+    "run": "20261114-160252-image-ec1031",
+    "workflow": "image",
+    "title": "cuisinesavvy: image waiting (20261114-160252-image-ec1031)",
+    "reason": "judge stopped: the photo looks AI-generated: likeness 4/5, above 3/5",
+    "waiting_since": "2026-11-14T16:04:02Z"
+   },
+   {
+    "issue": 1606,
+    "run": "20261114-160812-image-upload-21240e",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261114-160812-image-upload-21240e)",
+    "reason": "judge stopped: Right dish: chickpeas in tomato gravy, coriander garnish, no meat or dairy",
+    "waiting_since": "2026-11-14T16:08:29Z"
+   },
+   {
+    "issue": 1609,
+    "run": "20261114-161345-respond-27d81d",
+    "workflow": "respond",
+    "title": "respond: Baharat Lentil Rice (20261114)",
+    "reason": "judge stopped: Health text and tag call it high-protein; ~20 g protein is only ~12% of ~650-700 kcal, below the UK/EU 20%-of-energy threshold, so the claim is false",
+    "waiting_since": "2026-11-14T16:14:59Z"
+   },
+   {
+    "issue": 1611,
+    "run": "20261114-161824-respond-cde7f1",
+    "workflow": "respond",
+    "title": "respond: Georgian Red Pepper Walnut Satsivi (20261114)",
+    "reason": "judge stopped: Health text falsely says 2 tbsp oil go into the sauce (1 tbsp sauce, 1 tbsp roasting)",
+    "waiting_since": "2026-11-14T16:19:37Z"
+   },
+   {
+    "issue": 1614,
+    "run": "20261114-163255-nutrition-568155",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-163255-nutrition-568155)",
+    "reason": "automation flagged: 4 ingredient line(s) have no match in the registry: `400 g plant sausages, skins removed and crumbled, or 400 g c` (no ingredient matches 'plant sausages'); `100 g dried apricots, finely chopped` (no ingredient matches 'dried apricots'); `2 tbsp caramelised red onion chutney (che",
+    "waiting_since": "2026-11-14T16:33:17Z"
+   },
+   {
+    "issue": 1620,
+    "run": "20261114-165025-image-upload-3bdf1d",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261114-165025-image-upload-3bdf1d)",
+    "reason": "judge stopped: No rice visible: it reads as lentils only",
+    "waiting_since": "2026-11-14T16:50:42Z"
+   },
+   {
+    "issue": 1628,
+    "run": "20261114-171933-approve-ad8122",
+    "workflow": "approve",
+    "title": "approve: Date Apple Cranberry Chutney (20261114)",
+    "reason": "judge stopped: Fine sea salt (1 tsp) required by the brief but missing from list and method",
+    "waiting_since": "2026-11-14T17:20:25Z"
+   },
+   {
+    "issue": 1636,
+    "run": "20261114-174137-image-upload-46390f",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261114-174137-image-upload-46390f)",
+    "reason": "judge stopped: Right dish: tomato-braised flat beans, onion, garlic, parsley; nothing non-vegan",
+    "waiting_since": "2026-11-14T17:41:52Z"
+   },
+   {
+    "issue": 1637,
+    "run": "20261114-174156-image-upload-c9227f",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261114-174156-image-upload-c9227f)",
+    "reason": "judge stopped: Watermark text 'Hadia's Lebanese Cuisine' on the bowl",
+    "waiting_since": "2026-11-14T17:42:11Z"
+   },
+   {
+    "issue": 1638,
+    "run": "20261114-174214-image-upload-43ec78",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261114-174214-image-upload-43ec78)",
+    "reason": "judge stopped: Same file as Codex candidate-v3 (394,909 bytes), which was stopped on 13 Nov",
+    "waiting_since": "2026-11-14T17:42:29Z"
+   },
+   {
+    "issue": 1639,
+    "run": "20261114-174233-image-upload-dbb74a",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261114-174233-image-upload-dbb74a)",
+    "reason": "judge stopped: Visible '© The Endless Meal' watermark: this is another food blog's copyrighted photo, not ours to publish",
+    "waiting_since": "2026-11-14T17:42:49Z"
+   }
+  ],
+  "resolved": [
+   {
+    "issue": 1368,
+    "run": "20261113-104054-image-upload-982c04",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261113-104054-image-upload-982c04)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T15:06:12Z"
+    }
+   },
+   {
+    "issue": 1438,
+    "run": "20261113-150847-image-abb50f",
+    "workflow": "image",
+    "title": "cuisinesavvy: image waiting (20261113-150847-image-abb50f)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T15:05:25Z"
+    }
+   },
+   {
+    "issue": 1439,
+    "run": "20261113-151009-image-4e482f",
+    "workflow": "image",
+    "title": "cuisinesavvy: image waiting (20261113-151009-image-4e482f)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T15:04:42Z"
+    }
+   },
+   {
+    "issue": 1441,
+    "run": "20261113-154534-image-upload-bca721",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261113-154534-image-upload-bca721)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T15:04:27Z"
+    }
+   },
+   {
+    "issue": 1450,
+    "run": "20261113-172402-image-upload-3dbce7",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261113-172402-image-upload-3dbce7)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T15:04:13Z"
+    }
+   },
+   {
+    "issue": 1469,
+    "run": "20261114-012025-image-upload-e872df",
+    "workflow": "image-upload",
+    "title": "cuisinesavvy: image-upload waiting (20261114-012025-image-upload-e872df)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T15:03:59Z"
+    }
+   }
+  ],
+  "unchanged": 18,
+  "total": 43,
+  "oldest": {
+   "issue": 1236,
+   "waiting_since": "2026-11-13T06:14:59Z",
+   "age_hours": 35.8
+  }
+ },
+ "automation_queue": {
+  "total": 6,
+  "by_workflow": {
+   "approve": 2,
+   "cost_class": 1,
+   "image-upload": 1,
+   "respond": 2
+  },
+  "change": -14
+ },
+ "errors": [
+  {
+   "at": "2026-11-14T15:10:02Z",
+   "text": "judge: audit commit for 20261114-150458-image-9ee266: `git push` failed: To https://github.com/akionet/vault.git"
+  },
+  {
+   "at": "2026-11-14T15:13:48Z",
+   "text": "chain: 20261114-140336-approve-6b0f11 -> cost_class new ingredients run=None exit=1 waiting=False"
+  },
+  {
+   "at": "2026-11-14T15:22:00Z",
+   "text": "chain: 20261114-141238-approve-be25c4 -> cost_class new ingredients run=None exit=1 waiting=False"
+  },
+  {
+   "at": "2026-11-14T15:37:22Z",
+   "text": "judge: 20261114-143147-approve-f59bf2: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:37:28Z",
+   "text": "judge: 20261114-143349-respond-574b7a: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:37:34Z",
+   "text": "judge: 20261114-143849-approve-59efa1: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:37:39Z",
+   "text": "judge: 20261114-144101-approve-3009f0: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:37:46Z",
+   "text": "judge: 20261114-144313-approve-6390db: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:37:53Z",
+   "text": "judge: 20261114-144739-approve-5676cf: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:37:59Z",
+   "text": "judge: 20261114-145619-approve-4f7296: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:38:04Z",
+   "text": "judge: 20261114-145754-regen-92cdeb: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:38:10Z",
+   "text": "judge: 20261114-150210-approve-56bc49: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:46:33Z",
+   "text": "judge: 20261114-153259-image-upload-0c306f: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:46:38Z",
+   "text": "judge: 20261114-154300-image-upload-ddb268: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:46:44Z",
+   "text": "judge: 20261114-143147-approve-f59bf2: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:46:50Z",
+   "text": "judge: 20261114-143349-respond-574b7a: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:46:55Z",
+   "text": "judge: 20261114-143849-approve-59efa1: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:01Z",
+   "text": "judge: 20261114-144101-approve-3009f0: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:06Z",
+   "text": "judge: 20261114-144313-approve-6390db: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:12Z",
+   "text": "judge: 20261114-144739-approve-5676cf: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:18Z",
+   "text": "judge: 20261114-145619-approve-4f7296: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:24Z",
+   "text": "judge: 20261114-145754-regen-92cdeb: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:30Z",
+   "text": "judge: 20261114-150210-approve-56bc49: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:36Z",
+   "text": "judge: 20261114-151542-respond-c5b541: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:41Z",
+   "text": "judge: 20261114-151735-regen-a458b7: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:46Z",
+   "text": "judge: 20261114-151851-regen-5b13d2: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:52Z",
+   "text": "judge: 20261114-152248-regen-4d2371: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:47:57Z",
+   "text": "judge: 20261114-153337-regen-18a30c: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:48:02Z",
+   "text": "judge: 20261114-153459-regen-faca5c: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:48:08Z",
+   "text": "judge: 20261114-153644-regen-e7a64d: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 1/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:50:47Z",
+   "text": "judge: 20261114-153259-image-upload-0c306f: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:50:55Z",
+   "text": "judge: 20261114-154300-image-upload-ddb268: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:53:03Z",
+   "text": "judge: 20261114-151542-respond-c5b541: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:53:09Z",
+   "text": "judge: 20261114-151735-regen-a458b7: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:53:16Z",
+   "text": "judge: 20261114-151851-regen-5b13d2: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:53:22Z",
+   "text": "judge: 20261114-152248-regen-4d2371: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:53:28Z",
+   "text": "judge: 20261114-153337-regen-18a30c: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:53:34Z",
+   "text": "judge: 20261114-153459-regen-faca5c: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T15:55:30Z",
+   "text": "judge: 20261114-153644-regen-e7a64d: no usable review (reviewer exited 1: You've hit your 5-hour limit · resets 4pm (Europe/London)); try 2/3, next sweep"
+  },
+  {
+   "at": "2026-11-14T16:03:19Z",
+   "text": "judge: audit commit for 20261114-154602-image-f57a89: `git push` failed: To https://github.com/akionet/vault.git"
+  },
+  {
+   "at": "2026-11-14T16:34:01Z",
+   "text": "chain: 20261114-160933-approve-71638f -> cost_class new ingredients run=None exit=1 waiting=False"
+  },
+  {
+   "at": "2026-11-14T17:39:46Z",
+   "text": "galatea reconcile: 33 published, 9 requeued, 0 failed"
+  },
+  {
+   "at": "2026-11-14T17:54:00Z",
+   "text": "judge: 20261114-174114-image-upload-0d3e4c: no usable review (no JSON verdict in the reply); try 1/3, next sweep"
+  }
+ ],
+ "backpressure": {
+  "passes_throttled": 0,
+  "last": null
+ }
+}

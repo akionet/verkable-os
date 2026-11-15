@@ -16,7 +16,7 @@ import ast
 from pathlib import Path
 
 SRC = Path(__file__).resolve().parents[1] / "src" / "navigator_orchestrator"
-PLATFORM = ("api", "engine", "store", "workflows")
+PLATFORM = ("api", "engine", "store", "workflows", "observe")
 
 
 def _imports(path: Path) -> set[str]:
@@ -65,3 +65,8 @@ def test_the_sdk_may_import_engine_contracts() -> None:
     """The permitted direction, asserted so the rule is not read as symmetric."""
     imports = {name for path in (SRC / "sdk").rglob("*.py") for name in _imports(path)}
     assert any(name.startswith("navigator_orchestrator.engine") for name in imports)
+
+
+def test_observe_never_imports_workflow_definitions() -> None:
+    assert _offenders("observe", "navigator_orchestrator.workflows") == []
+    assert _offenders("observe", "workflows") == []

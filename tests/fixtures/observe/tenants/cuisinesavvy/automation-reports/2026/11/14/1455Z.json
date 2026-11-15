@@ -1,0 +1,890 @@
+{
+ "schema": "verkable.automation-report/1",
+ "space": "cuisinesavvy",
+ "generated_at": "2026-11-14T14:55:13Z",
+ "window": {
+  "from": "2026-11-14T11:31:12Z",
+  "to": "2026-11-14T14:55:13Z"
+ },
+ "previous": "tenants/cuisinesavvy/automation-reports/2026/11/14/1131Z.json",
+ "headline": {
+  "published": 4,
+  "submitted": 7,
+  "decisions": 105,
+  "decided_by_automation": 58,
+  "decided_by_human": 47,
+  "pending_human_added": 14,
+  "pending_human_resolved": 44,
+  "pending_human_total": 24,
+  "automation_queue": 20,
+  "errors": 7
+ },
+ "published": [
+  {
+   "title": "Spiced Rum Apple Cranberry Sauce",
+   "run": "20261114-115253-approve-f76eea",
+   "at": "2026-11-14T12:19:39Z",
+   "decided_by": "judge",
+   "issue": 1491,
+   "identifier": "spiced-rum-apple-cranberry-sauce",
+   "url": "https://www.cuisinesavvy.com/recipe/spiced-rum-apple-cranberry-sauce"
+  },
+  {
+   "title": "Hearty Chana Masala with Garam Masala",
+   "run": "20261114-130539-approve-d40ab7",
+   "at": "2026-11-14T14:06:04Z",
+   "decided_by": "judge",
+   "issue": 1532,
+   "identifier": "hearty-chana-masala-with-garam-masala",
+   "url": "https://www.cuisinesavvy.com/recipe/hearty-chana-masala-with-garam-masala"
+  },
+  {
+   "title": "Saffron Seitan and Pear Tagine",
+   "run": "20261114-133621-approve-eee107",
+   "at": "2026-11-14T14:35:39Z",
+   "decided_by": "judge",
+   "issue": 1549,
+   "identifier": "saffron-seitan-and-pear-tagine",
+   "url": "https://www.cuisinesavvy.com/recipe/saffron-seitan-and-pear-tagine"
+  },
+  {
+   "title": "Saffron Carrot Prune Stew",
+   "run": "20261114-134626-approve-1acf40",
+   "at": "2026-11-14T14:44:30Z",
+   "decided_by": "judge",
+   "issue": 1553,
+   "identifier": "saffron-carrot-prune-stew",
+   "url": "https://www.cuisinesavvy.com/recipe/saffron-carrot-prune-stew"
+  }
+ ],
+ "submitted": [
+  {
+   "request": "R9D2B9D",
+   "packet": "2026-11-14-spiced-rum-apple-cranberry-sauce",
+   "at": "2026-11-14T11:37:47Z"
+  },
+  {
+   "request": "RWE1J79",
+   "packet": "2026-11-14-date-apple-cranberry-chutney",
+   "at": "2026-11-14T11:39:36Z"
+  },
+  {
+   "request": "RZSCWR7",
+   "packet": "2026-11-14-chestnut-apricot-herb-stuffing",
+   "at": "2026-11-14T11:41:21Z"
+  },
+  {
+   "request": "RNHQ3FQ",
+   "packet": "2026-11-14-crisped-onion-lentil-rice",
+   "at": "2026-11-14T11:43:25Z"
+  },
+  {
+   "request": "R3SLP51",
+   "packet": "2026-11-14-vietnamese-lemongrass-mushroom-stew",
+   "at": "2026-11-14T12:01:05Z"
+  },
+  {
+   "request": "R2158UM",
+   "packet": "2026-11-14-gratin-dauphinois",
+   "at": "2026-11-14T12:10:20Z"
+  },
+  {
+   "request": "RFH00ZT",
+   "packet": "2026-11-14-butter-seitan-makhani",
+   "at": "2026-11-14T12:50:53Z"
+  }
+ ],
+ "decisions": {
+  "by_decider": {
+   "autopilot": {
+    "approve": 10
+   },
+   "human": {
+    "approve": 15,
+    "revise": 18,
+    "reject": 14
+   },
+   "judge": {
+    "approve": 41,
+    "revise": 7
+   }
+  },
+  "by_workflow": {
+   "approve": {
+    "approve": 4,
+    "reject": 3
+   },
+   "cleanup": {
+    "approve": 5
+   },
+   "cost-class": {
+    "approve": 1,
+    "reject": 1
+   },
+   "galatea-version": {
+    "revise": 1
+   },
+   "nutrition": {
+    "approve": 8,
+    "reject": 10
+   },
+   "practicality": {
+    "approve": 5
+   },
+   "regen": {
+    "approve": 26,
+    "revise": 2
+   },
+   "respond": {
+    "approve": 17,
+    "revise": 22
+   }
+  }
+ },
+ "judge": {
+  "approve": 41,
+  "revise": 7,
+  "stop": 8,
+  "with_polish": 41,
+  "stops": [
+   {
+    "issue": 1507,
+    "run": "20261114-122637-regen-0f2dd7",
+    "workflow": "regen",
+    "subject": "R8TZXKI",
+    "reasons": [
+     "Dukkah: the 'rely on linked recipe' option is carried, with 4 tbsp and keep the rest in a jar",
+     "Clean score and extRecipes notes are carried",
+     "Salt split is wrong: 1 tsp + ¼ tsp = 1¼ tsp, not the 1½ tsp total it states"
+    ]
+   },
+   {
+    "issue": 1512,
+    "run": "20261114-122945-regen-f86e37",
+    "workflow": "regen",
+    "subject": "RJ6YH42",
+    "reasons": [
+     "Adds 'HealthScore target is 7', which the notes never asked for. '7 sauce' in Emily's answer means item 7 = course sauce",
+     "Setting a target score conflicts with working the score out from the ingredients, so the score could be untrue",
+     "Everything else is carried: sauce course, no centrepiece, silky blend, cook time, both claims removed, clean score, extRecipes"
+    ]
+   },
+   {
+    "issue": 1516,
+    "run": "20261114-123436-regen-593fa5",
+    "workflow": "regen",
+    "subject": "RFO6HNX",
+    "reasons": [
+     "Emily's '+clean' point is missing for score_methodology: the revision says don't touch it, but never says it must be one clean calculation",
+     "Item 6 now tells the drafter to recalculate the score itself, which reverses the original brief (score is auto-calculated) and wasn't asked for",
+     "Everything else is carried: health wording, Maghmour extRecipe text, optional make-ahead note after serving, salt, 55 min, no smoky"
+    ]
+   },
+   {
+    "issue": 1519,
+    "run": "20261114-123653-regen-34e16c",
+    "workflow": "regen",
+    "subject": "RFZQ8O0",
+    "reasons": [
+     "Finishing oil still doesn't match: ingredients say 1 tbsp optional, but the berbere step and editor's note 2 say fry in 1 tsp taken from it",
+     "The notes ask for one figure: 1 tbsp to bloom the 1–2 tsp berbere",
+     "Gluten (flatbread + injera), clean score working and extRecipes points are all carried"
+    ]
+   },
+   {
+    "issue": 1521,
+    "run": "20261114-123943-respond-8a531d",
+    "workflow": "respond",
+    "subject": "spiced-red-lentil-cakes",
+    "reasons": [
+     "Health text says ~1 tbsp oil per serving; 2 tbsp over 4 servings is ½ tbsp (false reader-facing claim)",
+     "Salad is dressed with oil only, with no salt or acid, so it will taste flat",
+     "Brief, vegan check, allergens (wheat/gluten) and method otherwise OK"
+    ]
+   },
+   {
+    "issue": 1536,
+    "run": "20261114-131208-respond-161764",
+    "workflow": "respond",
+    "subject": "fragrant-vegetable-tagine",
+    "reasons": [
+     "Couscous/flatbread are listed ingredients but gluten/wheat is missing from allergens",
+     "'gluten-free' tag is false as served with couscous or flatbread",
+     "15 min covered with no liquid on garlic and spices risks scorching the base"
+    ]
+   },
+   {
+    "issue": 1538,
+    "run": "20261114-131630-respond-d542e2",
+    "workflow": "respond",
+    "subject": "ginger-garlic-cranberry-chutney",
+    "reasons": [
+     "Description says 'roasted garlic' but the garlic is raw, minced and simmered",
+     "Health text says all original ingredients are plant-based, but the linked NPR relish uses sour cream",
+     "Health text claims a trace of cayenne 'supports a healthy metabolism', which it can't support"
+    ]
+   },
+   {
+    "issue": 1543,
+    "run": "20261114-132702-respond-84c501",
+    "workflow": "respond",
+    "subject": "baharat-lentil-soup",
+    "reasons": [
+     "Health text says 'HealthScore of 7 out of 10'; the published score is 91/100, so readers see a false number",
+     "Brief met: baharat replaces seven spice and is bloomed with the onion; lentils, cumin, parsley and lemon kept",
+     "Vegan, allergens covered, every ingredient used, method and timings sound"
+    ]
+   }
+  ]
+ },
+ "pending_human": {
+  "added": [
+   {
+    "issue": 1500,
+    "run": "20261114-122021-nutrition-1ba4ab",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-122021-nutrition-1ba4ab)",
+    "reason": "automation flagged: 3 ingredient line(s) have no match in the registry: `1 tbsp plant oil or vegan butter` (no ingredient matches 'plant oil'); `2 eating apples (such as Cox or Braeburn), peeled, cored and` (no ingredient matches 'eating apples'); `4 tbsp spiced rum` (no ingredient matches 'spiced r",
+    "waiting_since": "2026-11-14T12:20:39Z"
+   },
+   {
+    "issue": 1507,
+    "run": "20261114-122637-regen-0f2dd7",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261114-122637-regen-0f2dd7)",
+    "reason": "judge stopped: Dukkah: the 'rely on linked recipe' option is carried, with 4 tbsp and keep the rest in a jar",
+    "waiting_since": "2026-11-14T12:27:03Z"
+   },
+   {
+    "issue": 1512,
+    "run": "20261114-122945-regen-f86e37",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261114-122945-regen-f86e37)",
+    "reason": "judge stopped: Adds 'HealthScore target is 7', which the notes never asked for. '7 sauce' in Emily's answer means item 7 = course sauce",
+    "waiting_since": "2026-11-14T12:30:05Z"
+   },
+   {
+    "issue": 1516,
+    "run": "20261114-123436-regen-593fa5",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261114-123436-regen-593fa5)",
+    "reason": "judge stopped: Emily's '+clean' point is missing for score_methodology: the revision says don't touch it, but never says it must be one clean calculation",
+    "waiting_since": "2026-11-14T12:34:55Z"
+   },
+   {
+    "issue": 1519,
+    "run": "20261114-123653-regen-34e16c",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261114-123653-regen-34e16c)",
+    "reason": "judge stopped: Finishing oil still doesn't match: ingredients say 1 tbsp optional, but the berbere step and editor's note 2 say fry in 1 tsp taken from it",
+    "waiting_since": "2026-11-14T12:37:20Z"
+   },
+   {
+    "issue": 1521,
+    "run": "20261114-123943-respond-8a531d",
+    "workflow": "respond",
+    "title": "respond: Spiced Red Lentil Cakes (20261114)",
+    "reason": "judge stopped: Health text says ~1 tbsp oil per serving; 2 tbsp over 4 servings is ½ tbsp (false reader-facing claim)",
+    "waiting_since": "2026-11-14T12:41:05Z"
+   },
+   {
+    "issue": 1536,
+    "run": "20261114-131208-respond-161764",
+    "workflow": "respond",
+    "title": "respond: Fragrant Vegetable Tagine (20261114)",
+    "reason": "judge stopped: Couscous/flatbread are listed ingredients but gluten/wheat is missing from allergens",
+    "waiting_since": "2026-11-14T13:13:15Z"
+   },
+   {
+    "issue": 1538,
+    "run": "20261114-131630-respond-d542e2",
+    "workflow": "respond",
+    "title": "respond: Ginger Garlic Cranberry Chutney (20261114)",
+    "reason": "judge stopped: Description says 'roasted garlic' but the garlic is raw, minced and simmered",
+    "waiting_since": "2026-11-14T13:17:34Z"
+   },
+   {
+    "issue": 1543,
+    "run": "20261114-132702-respond-84c501",
+    "workflow": "respond",
+    "title": "respond: Baharat Lentil Soup (20261114)",
+    "reason": "judge stopped: Health text says 'HealthScore of 7 out of 10'; the published score is 91/100, so readers see a false number",
+    "waiting_since": "2026-11-14T13:28:08Z"
+   },
+   {
+    "issue": 1545,
+    "run": "20261114-113028-nutrition-0e90e7",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-113028-nutrition-0e90e7)",
+    "reason": "automation flagged: 3 ingredient line(s) have no match in the registry: `200g tub hummus` (no ingredient matches 'hummus'); `4 seeded wraps` (no ingredient matches 'wraps'); `small handful rocket leaves` ('Rocket' has no quantity)",
+    "waiting_since": "2026-11-14T13:29:02Z"
+   },
+   {
+    "issue": 1546,
+    "run": "20261114-113008-nutrition-9b2241",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-113008-nutrition-9b2241)",
+    "reason": "automation flagged: 2 ingredient line(s) have no match in the registry: `2 tablespoons oyster sauce (vegan)` (no ingredient matches 'oyster sauce'); `1 tablespoon fish sauce (vegan)` (no ingredient matches 'fish sauce')",
+    "waiting_since": "2026-11-14T13:29:06Z"
+   },
+   {
+    "issue": 1560,
+    "run": "20261114-140648-nutrition-59a856",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-140648-nutrition-59a856)",
+    "reason": "automation flagged: 1 ingredient line(s) have no match in the registry: `1–1½ tsp homemade Garam Masala (Indian Spice Mix) — see link` (no ingredient matches 'homemade Garam Masala')",
+    "waiting_since": "2026-11-14T14:07:01Z"
+   },
+   {
+    "issue": 1573,
+    "run": "20261114-143627-nutrition-a3ba30",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-143627-nutrition-a3ba30)",
+    "reason": "automation flagged: 1 ingredient line(s) have no match in the registry: `2 × 400 g tins of young green jackfruit in brine, drained, r` ('Young green jackfruit' has no reference food)",
+    "waiting_since": "2026-11-14T14:36:43Z"
+   },
+   {
+    "issue": 1579,
+    "run": "20261114-144516-nutrition-47a322",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-144516-nutrition-47a322)",
+    "reason": "automation flagged: 1 ingredient line(s) have no match in the registry: `150 g pitted prunes` (no ingredient matches 'prunes')",
+    "waiting_since": "2026-11-14T14:45:31Z"
+   }
+  ],
+  "resolved": [
+   {
+    "issue": 1125,
+    "run": "20261110-203141-regen-75e607",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261110-203141-regen-75e607)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:01:27Z"
+    }
+   },
+   {
+    "issue": 1126,
+    "run": "20261110-203400-regen-73bb87",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261110-203400-regen-73bb87)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:10:57Z"
+    }
+   },
+   {
+    "issue": 1145,
+    "run": "20261110-223556-regen-c24c64",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261110-223556-regen-c24c64)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:41:12Z"
+    }
+   },
+   {
+    "issue": 1147,
+    "run": "20261110-223906-regen-85af40",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261110-223906-regen-85af40)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:38:27Z"
+    }
+   },
+   {
+    "issue": 1149,
+    "run": "20261110-224146-regen-ce04d5",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261110-224146-regen-ce04d5)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:38:17Z"
+    }
+   },
+   {
+    "issue": 1150,
+    "run": "20261110-224459-respond-9588df",
+    "workflow": "respond",
+    "title": "respond: Super-Charged Roasted Vegetables (20261110)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:37:31Z"
+    }
+   },
+   {
+    "issue": 1153,
+    "run": "20261110-225624-respond-47824b",
+    "workflow": "respond",
+    "title": "respond: Fiery Berbere Red Lentil Stew (20261110)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:36:40Z"
+    }
+   },
+   {
+    "issue": 1154,
+    "run": "20261110-230113-respond-505e29",
+    "workflow": "respond",
+    "title": "respond: Za'atar Roasted Vegetables with Quinoa (20261110)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:35:43Z"
+    }
+   },
+   {
+    "issue": 1155,
+    "run": "20261110-230613-respond-ea3b6f",
+    "workflow": "respond",
+    "title": "respond: Za'atar Manakeesh Flatbread (20261110)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:35:02Z"
+    }
+   },
+   {
+    "issue": 1164,
+    "run": "20261111-004810-respond-28adbc",
+    "workflow": "respond",
+    "title": "respond: Baharat Eggplant Chickpea Stew (20261111)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:34:28Z"
+    }
+   },
+   {
+    "issue": 1165,
+    "run": "20261111-004936-approve-826708",
+    "workflow": "approve",
+    "title": "approve: Five-Spice Roasted Root Vegetables (20261111)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T13:00:29Z"
+    }
+   },
+   {
+    "issue": 1184,
+    "run": "20261111-010817-approve-4713ee",
+    "workflow": "approve",
+    "title": "approve: Roasted Mediterranean Vegetables with Classic Italian Herb Seasoning (20261111)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:59:54Z"
+    }
+   },
+   {
+    "issue": 1185,
+    "run": "20261111-010924-approve-ceb697",
+    "workflow": "approve",
+    "title": "approve: Warming Ras el Hanout Red Lentil Soup (20261111)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:59:15Z"
+    }
+   },
+   {
+    "issue": 1186,
+    "run": "20261111-011112-regen-7dabef",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261111-011112-regen-7dabef)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:32:38Z"
+    }
+   },
+   {
+    "issue": 1190,
+    "run": "20261111-014734-galatea-version-6fdc68",
+    "workflow": "galatea-version",
+    "title": "cuisinesavvy: galatea-version waiting (20261111-014734-galatea-version-6fdc68)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:58:59Z"
+    }
+   },
+   {
+    "issue": 1199,
+    "run": "20261111-022012-regen-68f47e",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261111-022012-regen-68f47e)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:30:43Z"
+    }
+   },
+   {
+    "issue": 1211,
+    "run": "20261111-030458-respond-4cdf5d",
+    "workflow": "respond",
+    "title": "respond: Baharat Lentil Soup (20261111)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:30:11Z"
+    }
+   },
+   {
+    "issue": 1245,
+    "run": "20261111-015235-respond-6cad15",
+    "workflow": "respond",
+    "title": "respond: Sesame Cinnamon Pumpkin Paste (20261111)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:29:38Z"
+    }
+   },
+   {
+    "issue": 1308,
+    "run": "20261113-081352-nutrition-55be04",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-081352-nutrition-55be04)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:58:11Z"
+    }
+   },
+   {
+    "issue": 1322,
+    "run": "20261113-084503-respond-c4d173",
+    "workflow": "respond",
+    "title": "respond: Port Red Onion Cranberry Relish (20261113)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:29:07Z"
+    }
+   },
+   {
+    "issue": 1323,
+    "run": "20261113-084744-nutrition-dfd3cd",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-084744-nutrition-dfd3cd)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:57:39Z"
+    }
+   },
+   {
+    "issue": 1327,
+    "run": "20261113-085143-nutrition-ad6d49",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-085143-nutrition-ad6d49)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:57:29Z"
+    }
+   },
+   {
+    "issue": 1341,
+    "run": "20261113-092400-respond-d57b61",
+    "workflow": "respond",
+    "title": "respond: Vegan Mushroom Cabbage Rolls (20261113)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:28:32Z"
+    }
+   },
+   {
+    "issue": 1342,
+    "run": "20261113-092644-nutrition-d1ccf3",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-092644-nutrition-d1ccf3)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:57:18Z"
+    }
+   },
+   {
+    "issue": 1346,
+    "run": "20261113-093717-nutrition-ad2189",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-093717-nutrition-ad2189)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:56:43Z"
+    }
+   },
+   {
+    "issue": 1350,
+    "run": "20261113-094656-nutrition-a30bbb",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-094656-nutrition-a30bbb)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:56:34Z"
+    }
+   },
+   {
+    "issue": 1354,
+    "run": "20261113-095542-nutrition-4580ec",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-095542-nutrition-4580ec)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:55:59Z"
+    }
+   },
+   {
+    "issue": 1359,
+    "run": "20261113-100341-nutrition-5efe3b",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-100341-nutrition-5efe3b)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:55:47Z"
+    }
+   },
+   {
+    "issue": 1363,
+    "run": "20261113-102136-respond-58979c",
+    "workflow": "respond",
+    "title": "respond: Georgian Red Pepper Walnut Satsivi (20261113)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:27:59Z"
+    }
+   },
+   {
+    "issue": 1365,
+    "run": "20261113-102914-nutrition-15706d",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-102914-nutrition-15706d)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:55:09Z"
+    }
+   },
+   {
+    "issue": 1374,
+    "run": "20261113-110352-nutrition-65fcf8",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-110352-nutrition-65fcf8)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:54:56Z"
+    }
+   },
+   {
+    "issue": 1377,
+    "run": "20261113-110713-nutrition-6bd92e",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-110713-nutrition-6bd92e)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:54:17Z"
+    }
+   },
+   {
+    "issue": 1380,
+    "run": "20261113-111004-nutrition-8a7b80",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-111004-nutrition-8a7b80)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:54:06Z"
+    }
+   },
+   {
+    "issue": 1393,
+    "run": "20261113-114323-respond-8e2922",
+    "workflow": "respond",
+    "title": "respond: Crisp Chilli-Soy Cauliflower (20261113)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:27:14Z"
+    }
+   },
+   {
+    "issue": 1394,
+    "run": "20261113-114549-respond-a1b948",
+    "workflow": "respond",
+    "title": "respond: Dukkah Roasted Chickpea and Vegetable Bake (20261113)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:26:24Z"
+    }
+   },
+   {
+    "issue": 1402,
+    "run": "20261113-122251-respond-6b89ca",
+    "workflow": "respond",
+    "title": "respond: Ginger Garlic Cranberry Chutney (20261113)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:25:47Z"
+    }
+   },
+   {
+    "issue": 1403,
+    "run": "20261113-122538-nutrition-35b8b1",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-122538-nutrition-35b8b1)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:53:54Z"
+    }
+   },
+   {
+    "issue": 1407,
+    "run": "20261113-123134-nutrition-7265e7",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-123134-nutrition-7265e7)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:53:44Z"
+    }
+   },
+   {
+    "issue": 1415,
+    "run": "20261113-131226-regen-c9a7e9",
+    "workflow": "regen",
+    "title": "cuisinesavvy: regen waiting (20261113-131226-regen-c9a7e9)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:25:37Z"
+    }
+   },
+   {
+    "issue": 1426,
+    "run": "20261113-141620-nutrition-b384d1",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261113-141620-nutrition-b384d1)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:53:34Z"
+    }
+   },
+   {
+    "issue": 1434,
+    "run": "20261113-145845-respond-dd07d5",
+    "workflow": "respond",
+    "title": "respond: Baharat Lentil Rice (20261113)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:24:58Z"
+    }
+   },
+   {
+    "issue": 1464,
+    "run": "20261114-010714-respond-0540e0",
+    "workflow": "respond",
+    "title": "respond: Fragrant Vegetable Tagine (20261114)",
+    "resolution": {
+     "verdict": "revise",
+     "decided_by": "human",
+     "at": "2026-11-14T12:24:19Z"
+    }
+   },
+   {
+    "issue": 1465,
+    "run": "20261114-011128-nutrition-8ef964",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-011128-nutrition-8ef964)",
+    "resolution": {
+     "verdict": "reject",
+     "decided_by": "human",
+     "at": "2026-11-14T12:53:24Z"
+    }
+   },
+   {
+    "issue": 1475,
+    "run": "20261114-020223-nutrition-81f811",
+    "workflow": "nutrition",
+    "title": "cuisinesavvy: nutrition waiting (20261114-020223-nutrition-81f811)",
+    "resolution": {
+     "verdict": "approve",
+     "decided_by": "human",
+     "at": "2026-11-14T12:52:30Z"
+    }
+   }
+  ],
+  "unchanged": 10,
+  "total": 24,
+  "oldest": {
+   "issue": 1236,
+   "waiting_since": "2026-11-13T06:14:59Z",
+   "age_hours": 32.7
+  }
+ },
+ "automation_queue": {
+  "total": 20,
+  "by_workflow": {
+   "approve": 12,
+   "cost_class": 1,
+   "image-upload": 1,
+   "regen": 1,
+   "respond": 5
+  },
+  "change": 17
+ },
+ "errors": [
+  {
+   "at": "2026-11-14T12:04:09Z",
+   "text": "judge: 20261114-113836-respond-9d0adc: the relay lock stayed busy; next sweep"
+  },
+  {
+   "at": "2026-11-14T12:23:20Z",
+   "text": "chain: 20261114-120233-respond-9a12f8 -> approve RXIP5AE run=None exit=1 waiting=False"
+  },
+  {
+   "at": "2026-11-14T12:33:36Z",
+   "text": "judge: 20261114-120704-regen-9cdad9: the relay lock stayed busy; next sweep"
+  },
+  {
+   "at": "2026-11-14T12:43:54Z",
+   "text": "judge: 20261114-121133-respond-15b653: the relay lock stayed busy; next sweep"
+  },
+  {
+   "at": "2026-11-14T14:07:46Z",
+   "text": "chain: 20261114-130539-approve-d40ab7 -> cost_class new ingredients run=None exit=1 waiting=False"
+  },
+  {
+   "at": "2026-11-14T14:37:28Z",
+   "text": "chain: 20261114-133621-approve-eee107 -> cost_class new ingredients run=None exit=1 waiting=False"
+  },
+  {
+   "at": "2026-11-14T14:46:20Z",
+   "text": "chain: 20261114-134626-approve-1acf40 -> cost_class new ingredients run=None exit=1 waiting=False"
+  }
+ ]
+}

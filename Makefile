@@ -3,6 +3,7 @@
         requirements requirements-uat requirements-golive
 
 UV ?= uv
+.PHONY: openapi check-openapi
 
 # Which provider extra to bake into a generated requirements.txt.
 # UAT is Gemini on Vertex; golive is Claude on Bedrock.
@@ -35,7 +36,13 @@ purity:             ## AC-3 node purity gate on its own
 test-live:          ## The one opt-in provider smoke
 	LIVE_LLM=true $(UV) run pytest -m live -q
 
-check: lint typecheck test   ## What CI runs
+openapi:                    ## Regenerate the Observe consumer contract
+	$(UV) run python -m navigator_orchestrator.observe.openapi
+
+check-openapi:              ## Fail if the generated Observe contract drifted
+	$(UV) run python -m navigator_orchestrator.observe.openapi --check
+
+check: lint typecheck test check-openapi   ## What CI runs
 
 # --------------------------------------------------------------------------
 # requirements.txt

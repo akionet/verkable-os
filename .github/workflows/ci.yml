@@ -69,6 +69,9 @@ jobs:
       - name: Typecheck
         run: uv run mypy
 
+      - name: Observe OpenAPI snapshot
+        run: uv run python -m navigator_orchestrator.observe.openapi --check
+
       - name: Test (unit + BDD)
         env:
           NAVIGATOR_REDIS_URL: redis://localhost:6379/0
